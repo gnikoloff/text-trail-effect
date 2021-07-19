@@ -7,7 +7,7 @@
 
 -------
 
-# The Title
+# Creating Typography Motion Trail Effects with WebGL
 
 *A description of the demo goes here.*
 
@@ -29,7 +29,7 @@ npm install
 Compile the code for development and start a local server:
 
 ```
-npm start
+npm start:local
 ```
 
 Create the build:
@@ -38,13 +38,9 @@ Create the build:
 npm run build
 ```
 
-## Credits
-
-- *third party resources*
-
 ## Misc
 
-Follow *Author*: [Twitter](), [Dribbble](), [Google+](), [GitHub]() 
+Follow Georgi: [Twitter](https://twitter.com/georgiNikoloff), [GitHub](https://github.com/gnikoloff) 
 
 Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
