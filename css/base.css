@@ -182,3 +182,17 @@ a:focus-visible {
 		justify-content: center;
 	}
 }
+
+/* CUSTOM */
+
+@import url('https://use.typekit.net/yme2ebl.css');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* dat.GUI */
+.dg.ac {
+  z-index: 9999 !important;
+}
