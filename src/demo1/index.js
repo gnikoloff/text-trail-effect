@@ -28,9 +28,9 @@ import persistenceFragment from './persistence.frag'
 
 const MOBILE_BREAKPOINT = 800
 const TYPEKIT_WEB_PROJECT_ID = 'cdp4bcs'
-const DEFAULT_FONT_FAMILY = 'paralucent'
+const DEFAULT_FONT_FAMILY = 'fleisch-wolf'
 const BORDER_PADDING = innerWidth > MOBILE_BREAKPOINT ? 40 : 30
-const START_COLOR = '#FFF'
+const START_COLOR = '#362cb7'
 const startColorRGB = hexRgb(START_COLOR, { format: 'array' })
 const PERSIST_COLOR = [
   startColorRGB[0] / 255,
@@ -40,15 +40,15 @@ const PERSIST_COLOR = [
 const TARGET_PERSIST_COLOR = [...PERSIST_COLOR]
 
 const OPTIONS = {
-  text: 'Motion',
+  text: 'Surreal',
   noiseFactor: 1,
   noiseScale: 0.0032,
   rgbPersistFactor: 0.98,
   alphaPersistFactor: 0.97,
   color: '#fff',
-  borderColor: MOBILE_BREAKPOINT > 800 ? '#111' : '#454545',
+  borderColor: MOBILE_BREAKPOINT > 800 ? '#111' : '#222',
   showBorder: true,
-  animateColor: false,
+  animateColor: true,
   fontFamily: DEFAULT_FONT_FAMILY,
 }
 
