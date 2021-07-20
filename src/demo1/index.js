@@ -22,8 +22,6 @@ import * as dat from 'dat.gui'
 import hexRgb from 'hex-rgb'
 import WebFont from 'webfontloader'
 
-
-
 import baseVertex from './base.vert'
 import textFragment from './text.frag'
 import persistenceFragment from './persistence.frag'
@@ -146,12 +144,6 @@ const labelMaterial = new ShaderMaterial({
 })
 const labelMesh = new Mesh(labelGeometry, labelMaterial)
 scene.add(labelMesh)
-
-drawText({
-  horizontalPadding: 0.5,
-  text: 'loading',
-  fontFamily: 'Helvetica',
-})
 
 setGUISettings()
 onResize()

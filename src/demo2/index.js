@@ -30,7 +30,13 @@ const MOBILE_BREAKPOINT = 800
 const TYPEKIT_WEB_PROJECT_ID = 'yme2ebl'
 const DEFAULT_FONT_FAMILY = 'roc-grotesk'
 const BORDER_PADDING = innerWidth > MOBILE_BREAKPOINT ? 40 : 30
-const PERSIST_COLOR = [1, 1, 1]
+const START_COLOR = '#FFF'
+const startColorRGB = hexRgb(START_COLOR, { format: 'array' })
+const PERSIST_COLOR = [
+  startColorRGB[0] / 255,
+  startColorRGB[1] / 255,
+  startColorRGB[2] / 255,
+]
 const TARGET_PERSIST_COLOR = [...PERSIST_COLOR]
 
 const OPTIONS = {
@@ -39,7 +45,7 @@ const OPTIONS = {
   noiseScale: 0.0032,
   rgbPersistFactor: 0.98,
   alphaPersistFactor: 0.97,
-  color: '#fff',
+  color: START_COLOR,
   borderColor: MOBILE_BREAKPOINT > 800 ? '#111' : '#454545',
   showBorder: true,
   animateColor: false,
@@ -144,12 +150,6 @@ const labelMaterial = new ShaderMaterial({
 })
 const labelMesh = new Mesh(labelGeometry, labelMaterial)
 scene.add(labelMesh)
-
-drawText({
-  horizontalPadding: 0.5,
-  text: 'loading font...',
-  fontFamily: 'Helvetica',
-})
 
 setGUISettings()
 onResize()
