@@ -1,21 +1,12 @@
-*How to use this template:*
-
-- The general styles for the demo page are in css/base.css
-- The README.md can be used to add credits of resources used
-- For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
-- Delete this 'how to' in the final version and leave the following (fill in title/description, credits and social links, we'll do the rest):
-
--------
-
 # Creating Typography Motion Trail Effects with WebGL
 
-*A description of the demo goes here.*
+Using WebGL framebuffers via Three.js for advanced graphical effects.
 
 ![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
 
-[Article on Codrops](https://tympanus.net/codrops/?p=)
+[Article on Codrops](https://tympanus.net/codrops/?p=55545)
 
-[Demo](http://tympanus.net/Development/.../)
+[Demo](http://tympanus.net/Tutorials/text-trail-effect/)
 
 
 ## Installation

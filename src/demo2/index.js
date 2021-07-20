@@ -30,9 +30,9 @@ const MOBILE_BREAKPOINT = 800
 const TYPEKIT_WEB_PROJECT_ID = 'cdp4bcs'
 const DEFAULT_FONT_FAMILY = 'fleisch-wolf'
 const BORDER_PADDING = innerWidth > MOBILE_BREAKPOINT ? 40 : 30
-const START_COLOR = '#FFF'
+const START_COLOR = '#0a0606'
 const startColorRGB = hexRgb(START_COLOR, { format: 'array' })
-const BACKGROUND_COLOR = '#111'
+const BACKGROUND_COLOR = '#fff'
 const PERSIST_COLOR = [
   startColorRGB[0] / 255,
   startColorRGB[1] / 255,
