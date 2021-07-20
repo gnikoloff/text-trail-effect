@@ -32,6 +32,7 @@ const DEFAULT_FONT_FAMILY = 'fleisch-wolf'
 const BORDER_PADDING = innerWidth > MOBILE_BREAKPOINT ? 40 : 30
 const START_COLOR = '#362cb7'
 const startColorRGB = hexRgb(START_COLOR, { format: 'array' })
+const BACKGROUND_COLOR = '#111'
 const PERSIST_COLOR = [
   startColorRGB[0] / 255,
   startColorRGB[1] / 255,
@@ -58,8 +59,8 @@ const targetMousePos = [0, 0]
 
 const renderer = new WebGLRenderer()
 {
-  renderer.setClearColor(0x999999)
-  renderer.setClearAlpha(0)
+  renderer.setClearColor(new Color(BACKGROUND_COLOR))
+  // renderer.setClearAlpha(0)
   document.getElementsByClassName('content')[0].appendChild(renderer.domElement)
 }
 
@@ -153,6 +154,7 @@ scene.add(labelMesh)
 
 setGUISettings()
 onResize()
+
 setInterval(onColorChange, 3000)
 renderer.setAnimationLoop(onAnimLoop)
 document.body.addEventListener('mousemove', onMouseMove)
@@ -191,11 +193,13 @@ function onAnimLoop() {
   renderer.autoClearColor = false
 
   renderer.setRenderTarget(fluidRenderTarget0)
+  renderer.clearColor()
   renderer.render(fluidScene, orthoCamera)
   labelMesh.material.uniforms.color.value.set(...PERSIST_COLOR)
   renderer.render(scene, orthoCamera)
 
   renderer.setRenderTarget(null)
+
   labelMesh.material.uniforms.color.value.set(...PERSIST_COLOR)
   renderer.render(fluidScene, orthoCamera)
   renderer.render(scene, orthoCamera)

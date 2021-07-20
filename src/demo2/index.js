@@ -28,10 +28,11 @@ import persistenceFragment from './persistence.frag'
 
 const MOBILE_BREAKPOINT = 800
 const TYPEKIT_WEB_PROJECT_ID = 'cdp4bcs'
-const DEFAULT_FONT_FAMILY = 'paralucent'
+const DEFAULT_FONT_FAMILY = 'fleisch-wolf'
 const BORDER_PADDING = innerWidth > MOBILE_BREAKPOINT ? 40 : 30
 const START_COLOR = '#FFF'
 const startColorRGB = hexRgb(START_COLOR, { format: 'array' })
+const BACKGROUND_COLOR = '#111'
 const PERSIST_COLOR = [
   startColorRGB[0] / 255,
   startColorRGB[1] / 255,
@@ -58,8 +59,8 @@ const targetMousePos = [0, 0]
 
 const renderer = new WebGLRenderer()
 {
-  renderer.setClearColor(0x222222)
-  renderer.setClearAlpha(0)
+  renderer.setClearColor(new Color(BACKGROUND_COLOR))
+  // renderer.setClearAlpha(0)
   document.getElementsByClassName('content')[0].appendChild(renderer.domElement)
 }
 
@@ -191,6 +192,7 @@ function onAnimLoop() {
   renderer.autoClearColor = false
 
   renderer.setRenderTarget(fluidRenderTarget0)
+  renderer.clearColor()
   renderer.render(fluidScene, orthoCamera)
   labelMesh.material.uniforms.color.value.set(...PERSIST_COLOR)
   renderer.render(scene, orthoCamera)
