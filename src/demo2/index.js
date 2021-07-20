@@ -27,8 +27,8 @@ import textFragment from './text.frag'
 import persistenceFragment from './persistence.frag'
 
 const MOBILE_BREAKPOINT = 800
-const TYPEKIT_WEB_PROJECT_ID = 'yme2ebl'
-const DEFAULT_FONT_FAMILY = 'roc-grotesk'
+const TYPEKIT_WEB_PROJECT_ID = 'cdp4bcs'
+const DEFAULT_FONT_FAMILY = 'paralucent'
 const BORDER_PADDING = innerWidth > MOBILE_BREAKPOINT ? 40 : 30
 const START_COLOR = '#FFF'
 const startColorRGB = hexRgb(START_COLOR, { format: 'array' })
@@ -40,7 +40,7 @@ const PERSIST_COLOR = [
 const TARGET_PERSIST_COLOR = [...PERSIST_COLOR]
 
 const OPTIONS = {
-  text: 'a',
+  text: 'play',
   noiseFactor: 1,
   noiseScale: 0.0032,
   rgbPersistFactor: 0.98,

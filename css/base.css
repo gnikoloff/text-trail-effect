@@ -5,14 +5,14 @@
 }
 
 :root {
-	font-size: 15px;
+	font-size: 12px;
 }
 
 body {
 	margin: 0;
-	--color-text: #fff;
+	--color-text: #ffffff3b;
 	--color-bg: #000;
-	--color-link: #fff;
+	--color-link: #ffffff82;
 	--color-link-hover: #fff;
 	color: var(--color-text);
 	background-color: var(--color-bg);
@@ -99,12 +99,13 @@ a:focus-visible {
 	text-align: center;
 	position: relative;
 	z-index: 1000;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .frame__title {
 	font-size: 1rem;
 	margin: 0 0 1rem;
-	font-weight: normal;
 }
 
 .frame__links {
@@ -147,11 +148,11 @@ a:focus-visible {
 		width: 100%;
 		max-width: none;
 		height: 100vh;
-		padding: 4rem;
+		padding: 4.5rem;
 		pointer-events: none;
 		grid-template-columns: 75% 25%;
 		grid-template-rows: auto auto auto;
-		grid-template-areas: 'title links'
+		grid-template-areas: 'title ...'
 							'... ...'
 							'... demos';
 	}
@@ -174,9 +175,7 @@ a:focus-visible {
 		justify-self: end;
 	}
 	.frame__links {
-		grid-area: links;
-		padding: 0;
-		justify-self: end;
+		padding: 0 0 0 2rem;
 	}
 	.frame a {
 		pointer-events: auto;
