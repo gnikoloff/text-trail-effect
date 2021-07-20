@@ -10,15 +10,19 @@
 
 body {
 	margin: 0;
-	--color-text: #111;
-	--color-bg: #fff;
-	--color-link: #aaa;
-	--color-link-hover: #000;
+	--color-text: #fff;
+	--color-bg: #000;
+	--color-link: #fff;
+	--color-link-hover: #fff;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	font-family: tenon, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.dg.ac {
+  z-index: 9999 !important;
 }
 
 /* Page Loader */
@@ -143,7 +147,7 @@ a:focus-visible {
 		width: 100%;
 		max-width: none;
 		height: 100vh;
-		padding: 3rem;
+		padding: 4rem;
 		pointer-events: none;
 		grid-template-columns: 75% 25%;
 		grid-template-rows: auto auto auto;
@@ -181,18 +185,4 @@ a:focus-visible {
 		height: 100vh;
 		justify-content: center;
 	}
-}
-
-/* CUSTOM */
-
-@import url('https://use.typekit.net/yme2ebl.css');
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* dat.GUI */
-.dg.ac {
-  z-index: 9999 !important;
 }

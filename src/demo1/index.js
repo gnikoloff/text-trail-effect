@@ -29,14 +29,14 @@ import textFragment from './text.frag'
 import persistenceFragment from './persistence.frag'
 
 const MOBILE_BREAKPOINT = 800
-const TYPEKIT_WEB_PROJECT_ID = 'yme2ebl'
-const DEFAULT_FONT_FAMILY = 'roc-grotesk'
+const TYPEKIT_WEB_PROJECT_ID = 'cdp4bcs'
+const DEFAULT_FONT_FAMILY = 'paralucent'
 const BORDER_PADDING = innerWidth > MOBILE_BREAKPOINT ? 40 : 30
 const PERSIST_COLOR = [1, 1, 1]
 const TARGET_PERSIST_COLOR = [...PERSIST_COLOR]
 
 const OPTIONS = {
-  text: 'demo 1',
+  text: 'Motion',
   noiseFactor: 1,
   noiseScale: 0.0032,
   rgbPersistFactor: 0.98,
@@ -63,7 +63,7 @@ const clock = new Clock()
 const scene = new Scene()
 const fluidScene = new Scene()
 const gui = new dat.GUI()
-gui.close()
+gui.hide()
 
 const orthoCamera = new OrthographicCamera(
   -innerWidth / 2,
@@ -149,7 +149,7 @@ scene.add(labelMesh)
 
 drawText({
   horizontalPadding: 0.5,
-  text: 'loading font...',
+  text: 'loading',
   fontFamily: 'Helvetica',
 })
 
