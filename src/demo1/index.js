@@ -30,7 +30,13 @@ const MOBILE_BREAKPOINT = 800
 const TYPEKIT_WEB_PROJECT_ID = 'cdp4bcs'
 const DEFAULT_FONT_FAMILY = 'paralucent'
 const BORDER_PADDING = innerWidth > MOBILE_BREAKPOINT ? 40 : 30
-const PERSIST_COLOR = [1, 1, 1]
+const START_COLOR = '#FFF'
+const startColorRGB = hexRgb(START_COLOR, { format: 'array' })
+const PERSIST_COLOR = [
+  startColorRGB[0] / 255,
+  startColorRGB[1] / 255,
+  startColorRGB[2] / 255,
+]
 const TARGET_PERSIST_COLOR = [...PERSIST_COLOR]
 
 const OPTIONS = {
