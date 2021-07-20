@@ -308,6 +308,7 @@ function onResize(resizeCamera = true, resizeFramebuffers = true) {
 }
 
 function onFontActive() {
+  document.body.classList.remove('loading')
   gui
     .add(OPTIONS, 'fontFamily', fontFamilies)
     .onChange((fontFamily) => drawText({ fontFamily }))
