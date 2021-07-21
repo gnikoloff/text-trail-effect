@@ -2,7 +2,7 @@
 
 Using WebGL framebuffers via Three.js for advanced graphical effects.
 
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+![Image Title](https://tympanus.net/codrops/wp-content/uploads/2021/07/motiontrail_feat.jpg)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=55545)
 
